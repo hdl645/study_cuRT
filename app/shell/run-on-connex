@@ -1,0 +1,10 @@
+#!/bin/sh
+
+qemu-system-arm \
+	-M connex \
+	-pflash flash-image \
+	-monitor null -nographic
+
+# once qemu is killed.
+clear
+reset
